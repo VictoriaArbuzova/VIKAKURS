@@ -1,0 +1,37 @@
+﻿<Window x:Class="КУРСАЧВИКИ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:КУРСАЧВИКИ"
+        mc:Ignorable="d"
+        Title="ClAIMb" Height="450" Width="800" 
+        WindowStartupLocation="CenterScreen"
+        Background="#363635"
+        ResizeMode="CanMinimize">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="Войти" HorizontalAlignment="Center" VerticalAlignment="Center" Height="75" Width="400" Name="ButtonAvtorise" FontSize="30" FontFamily="Arial" Cursor="Hand" FontWeight="Bold" 
+            FontStyle="Italic" Grid.Row="0" BorderBrush="Red" BorderThickness="2" Background="#FFAD8B8B" Click="ButtonAvtorise_Click" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Зарегистрироваться" HorizontalAlignment="Center" VerticalAlignment="Center" Height="75" Width="400" Name="ButtonRegistr" FontSize="30" FontFamily="Arial" Cursor="Hand" FontWeight="Bold" 
+            FontStyle="Italic" Grid.Row="1" BorderBrush="Red" BorderThickness="2" Background="#FFAD8B8B" Click="ButtonRegistr_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>
