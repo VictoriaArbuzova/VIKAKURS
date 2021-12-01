@@ -33,7 +33,10 @@ namespace КУРСАЧВИКИ
 
         private void ButtonNext_Click(object sender, RoutedEventArgs e)
         {
-
+            Profile profile = new Profile();
+            profile.Show();
+            Close();
         }
+
     }
 }
